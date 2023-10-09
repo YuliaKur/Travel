@@ -4,18 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
     <title>Main page</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./src/fonts/CircularStd/stylesheet.css">
 </head>
 
-<body class="dark">
+<body>
 
     @@include('blocks/header.html')
+<main>
+    @@include('blocks/discover.html')
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem officia laudantium reiciendis consequatur
-        tempora aperiam nemo officiis corporis illum commodi temporibus perferendis, sint excepturi quibusdam optio ad
-        fugit. Vitae, facere.</p>
-        
+</main>
+
+
     @@include('blocks/footer.html')
 
     <script src="./js/index.bundle.js"></script>
