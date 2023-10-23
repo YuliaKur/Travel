@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main page</title>
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./src/fonts/CircularStd/stylesheet.css">
-</head>
-
-<body>
-    <header class="header">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Travel Agent</title>
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./fonts/CircularStd/stylesheet.css">
+	</head>
+	<body>
+		<header class="header">
     <div class="container">
         <nav class="nav">
             <a href="#!" class="logo">
@@ -42,8 +41,8 @@
 	</ul>
 </div>
 
-    <main>
-        <section class="discover">
+		<main>
+			<section class="discover">
 	<div class="container">
 		<div class="discover__grid">
 			<div class="discover__desc">
@@ -72,7 +71,7 @@
 
 	<div class="form__devider"></div>
 
-    <label for="" class="form__label">
+    <label for="" class="form__label-data">
         <span>Date and time</span>
         <input id="datePicket" name="date" type="text" class="form__input" placeholder="MM/DD/YYYY" autocomplete="off">
     </label>
@@ -120,7 +119,7 @@
 	</div>
 </section>
 
-        <section class="partners">
+			<section class="partners">
     <div class="container">
         <div class="partners__row">
             <h2 class="partners__title">Our Travel Partner</h2>
@@ -134,7 +133,7 @@
         </div>
     </div>
 </section>
-        <section class="popular">
+			<section class="popular">
     <div class="container">
         <div class="popular__top">
 
@@ -153,7 +152,7 @@
     </div>
     <div class="container-right">
         <div class="popular__slider">
-            <div class="swiper">
+            <div class="swiper" id="swiper-popular">
   <div class="swiper-wrapper">
     <div class="swiper-slide"><div class="card">
     <div class="card__img">
@@ -231,224 +230,678 @@
         </div>
     </div>
 </section>
-        <section class="testimonials">
-    <div class="container">
-        <div class="testimonials__grid">
-            <div class="testimonials_col">
-                <div class="card-review">
-    <div class="card-review__reting">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star-off.svg" alt="Star">
-    </div>
+			<section class="testimonials">
+	<div class="container">
+		<div class="testimonials__grid">
 
-    <p class="card-review__text">
-        "An outstanding resource for travel enthusiasts! The website's destination reviews and travel advice were spot-on. I now trust their recommendations for all my trips.."
-    </p>
+            <div class="testimonials__col">
+                <!-- Slider -->
+                <div class="swiper testimonials__swiper" id="testimonials-col-1">
+                    <div class="swiper-wrapper smooth-transition">
+                        <div class="swiper-slide">
+    <div class="card-review">
+        <div class="card-review__rating">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
 
-    <div class="card-review__author">
-        <div class="card-review__author-img">
-            <img src="./img/testimonials/01.jpg" alt="Photo">
+            
         </div>
-        <div class="card-review__author-title">
-            <h4 class="card-review__author-name">Hendra Paru Paru</h4>
-            <p class="card-review__author-role">Travel Enthusiast</p>
-        </div>
-    </div>
-</div>
-                <div class="card-review">
-    <div class="card-review__reting">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star.svg" alt="Star">
-    </div>
 
-    <p class="card-review__text">
-"I had a seamless booking process with this travel website. Their website was easy to navigate, and I got fantastic deals on flights and accommodation. Will definitely use them for future trips."    </p>
+        <p class="card-review__text">
+            "An outstanding resource for travel enthusiasts! The website's destination reviews and travel advice were spot-on. I now trust their recommendations for all my trips.."
+        </p>
 
-    <div class="card-review__author">
-        <div class="card-review__author-img">
-            <img src="./img/testimonials/02.jpg" alt="Photo">
-        </div>
-        <div class="card-review__author-title">
-            <h4 class="card-review__author-name">Akbar Cenglu</h4>
-            <p class="card-review__author-role">Travel Enthusiast</p>
-        </div>
-    </div>
-</div>
-                <div class="card-review">
-    <div class="card-review__reting">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star-off.svg" alt="Star">
-    </div>
-
-    <p class="card-review__text">
-        "An outstanding resource for travel enthusiasts! The website's destination reviews and travel advice were spot-on. I now trust their recommendations for all my trips.."
-    </p>
-
-    <div class="card-review__author">
-        <div class="card-review__author-img">
-            <img src="./img/testimonials/03.jpg" alt="Photo">
-        </div>
-        <div class="card-review__author-title">
-            <h4 class="card-review__author-name">Jake Paul</h4>
-            <p class="card-review__author-role">Travel Enthusiast</p>
-        </div>
-    </div>
-</div>
+        <div class="card-review__author">
+            <div class="card-review__author-img">
+                <img src="./img/testimonials/01.jpg" alt="Photo">
             </div>
-            <div class="testimonials_col">
-                <div class="card-review">
-    <div class="card-review__reting">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star.svg" alt="Star">
-    </div>
 
-    <p class="card-review__text">
-        "Amazing experience! The travel website made booking our vacation a breeze. Everything was well-organized, and we had a fantastic time exploring new places. Highly recommend!"
-    </p>
-
-    <div class="card-review__author">
-        <div class="card-review__author-img">
-            <img src="./img/testimonials/04.jpg" alt="Photo">
-        </div>
-        <div class="card-review__author-title">
-            <h4 class="card-review__author-name">Nichole Edward</h4>
-            <p class="card-review__author-role">Travel Enthusiast</p>
-        </div>
-    </div>
-</div>
-                <div class="card-review">
-    <div class="card-review__reting">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star-off.svg" alt="Star">
-    </div>
-
-    <p class="card-review__text">
-"The travel website's customer service is top-notch! They were quick to respond to my queries and helped me plan a dream vacation. It was an excellent experience from start to finish."    </p>
-
-    <div class="card-review__author">
-        <div class="card-review__author-img">
-            <img src="./img/testimonials/05.jpg" alt="Photo">
-        </div>
-        <div class="card-review__author-title">
-            <h4 class="card-review__author-name">Jennice Ong</h4>
-            <p class="card-review__author-role">Travel Enthusiast</p>
-        </div>
-    </div>
-</div>
-                <div class="card-review">
-    <div class="card-review__reting">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star.svg" alt="Star">
-    </div>
-
-    <p class="card-review__text">
-        "Hands down the best travel website I've ever used! The user interface was so intuitive, and I was able to book my dream vacation effortlessly. erat."
-    </p>
-
-    <div class="card-review__author">
-        <div class="card-review__author-img">
-            <img src="./img/testimonials/06.jpg" alt="Photo">
-        </div>
-        <div class="card-review__author-title">
-            <h4 class="card-review__author-name">Jon Wong</h4>
-            <p class="card-review__author-role">Travel Enthusiast</p>
-        </div>
-    </div>
-</div>
-            </div>
-            <div class="testimonials_col">
-                <div class="card-review">
-    <div class="card-review__reting">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star.svg" alt="Star">
-    </div>
-
-    <p class="card-review__text">
-        "Lorem ipsum dolor sit amet, Efficient and reliable! The travel website helped me find the best travel deals, and their user-friendly interface made the booking process a breeze."
-    </p>
-
-    <div class="card-review__author">
-        <div class="card-review__author-img">
-            <img src="./img/testimonials/07.jpg" alt="Photo">
-        </div>
-        <div class="card-review__author-title">
-            <h4 class="card-review__author-name">Jonathan R.</h4>
-            <p class="card-review__author-role">Travel Enthusiast</p>
-        </div>
-    </div>
-</div>
-                <div class="card-review">
-    <div class="card-review__reting">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star-off.svg" alt="Star">
-    </div>
-
-    <p class="card-review__text">
-        "I loved the personalized itinerary feature of this travel website. It allowed me to plan my trip according to my preferences, making it a truly customized experience."
-    </p>
-
-    <div class="card-review__author">
-        <div class="card-review__author-img">
-            <img src="./img/testimonials/08.jpg" alt="Photo">
-        </div>
-        <div class="card-review__author-title">
-            <h4 class="card-review__author-name">Angela Cole</h4>
-            <p class="card-review__author-role">Travel Enthusiast</p>
-        </div>
-    </div>
-</div>
-                <div class="card-review">
-    <div class="card-review__reting">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star.svg" alt="Star">
-        <img src="./img/icons/star.svg" alt="Star">
-    </div>
-
-    <p class="card-review__text">
-        "I loved the personalized itinerary feature of this travel website. It allowed me to plan my trip according to my preferences, making it a truly customized experience."
-    </p>
-
-    <div class="card-review__author">
-        <div class="card-review__author-img">
-            <img src="./img/testimonials/09.jpg" alt="Photo">
-        </div>
-        <div class="card-review__author-title">
-            <h4 class="card-review__author-name">Bambang Susilo</h4>
-            <p class="card-review__author-role">Travel Enthusiast</p>
-        </div>
-    </div>
-</div>
+            <div class="card-review__author-title">
+                <h4 class="card-review__author-name">Hendra Paru Paru</h4>
+                <p class="card-review__author-role">Travel Enthusiast</p>
             </div>
         </div>
     </div>
+</div>
+<div class="swiper-slide">
+    <div class="card-review">
+        <div class="card-review__rating">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+
+            
+                
+                    <img src="./img/icons/star-off.svg" alt="Star">
+                
+            
+        </div>
+
+        <p class="card-review__text">
+            "I had a seamless booking process with this travel website. Their website was easy to navigate, and I got fantastic deals on flights and accommodation. Will definitely use them for future trips."
+        </p>
+
+        <div class="card-review__author">
+            <div class="card-review__author-img">
+                <img src="./img/testimonials/02.jpg" alt="Photo">
+            </div>
+
+            <div class="card-review__author-title">
+                <h4 class="card-review__author-name">Akbar Cenglu</h4>
+                <p class="card-review__author-role">Travel Enthusiast</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-slide">
+    <div class="card-review">
+        <div class="card-review__rating">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+
+            
+                
+                    <img src="./img/icons/star-off.svg" alt="Star">
+                
+                    <img src="./img/icons/star-off.svg" alt="Star">
+                
+            
+        </div>
+
+        <p class="card-review__text">
+            "The detailed travel guides provided by this website were invaluable during our journey. We felt confident exploring a new destination, thanks to their helpful tips and insights. erat."
+        </p>
+
+        <div class="card-review__author">
+            <div class="card-review__author-img">
+                <img src="./img/testimonials/03.jpg" alt="Photo">
+            </div>
+
+            <div class="card-review__author-title">
+                <h4 class="card-review__author-name">Jake Paul</h4>
+                <p class="card-review__author-role">Travel Enthusiast</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-slide">
+    <div class="card-review">
+        <div class="card-review__rating">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+
+            
+        </div>
+
+        <p class="card-review__text">
+            "An outstanding resource for travel enthusiasts! The website's destination reviews and travel advice were spot-on. I now trust their recommendations for all my trips.."
+        </p>
+
+        <div class="card-review__author">
+            <div class="card-review__author-img">
+                <img src="./img/testimonials/01.jpg" alt="Photo">
+            </div>
+
+            <div class="card-review__author-title">
+                <h4 class="card-review__author-name">Hendra Paru Paru</h4>
+                <p class="card-review__author-role">Travel Enthusiast</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-slide">
+    <div class="card-review">
+        <div class="card-review__rating">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+
+            
+                
+                    <img src="./img/icons/star-off.svg" alt="Star">
+                
+            
+        </div>
+
+        <p class="card-review__text">
+            "I had a seamless booking process with this travel website. Their website was easy to navigate, and I got fantastic deals on flights and accommodation. Will definitely use them for future trips."
+        </p>
+
+        <div class="card-review__author">
+            <div class="card-review__author-img">
+                <img src="./img/testimonials/02.jpg" alt="Photo">
+            </div>
+
+            <div class="card-review__author-title">
+                <h4 class="card-review__author-name">Akbar Cenglu</h4>
+                <p class="card-review__author-role">Travel Enthusiast</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-slide">
+    <div class="card-review">
+        <div class="card-review__rating">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+
+            
+                
+                    <img src="./img/icons/star-off.svg" alt="Star">
+                
+                    <img src="./img/icons/star-off.svg" alt="Star">
+                
+            
+        </div>
+
+        <p class="card-review__text">
+            "The detailed travel guides provided by this website were invaluable during our journey. We felt confident exploring a new destination, thanks to their helpful tips and insights. erat."
+        </p>
+
+        <div class="card-review__author">
+            <div class="card-review__author-img">
+                <img src="./img/testimonials/03.jpg" alt="Photo">
+            </div>
+
+            <div class="card-review__author-title">
+                <h4 class="card-review__author-name">Jake Paul</h4>
+                <p class="card-review__author-role">Travel Enthusiast</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+                    </div>
+			    </div>
+                <!-- // Slider -->
+            </div>
+
+            <div class="testimonials__col">
+                <!-- Slider -->
+                <div class="swiper testimonials__swiper" id="testimonials-col-2">
+                    <div class="swiper-wrapper smooth-transition">
+                        <div class="swiper-slide">
+    <div class="card-review">
+        <div class="card-review__rating">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+
+            
+        </div>
+
+        <p class="card-review__text">
+            "Amazing experience! The travel website made booking our vacation a breeze. Everything was well-organized, and we had a fantastic time exploring new places. Highly recommend!"
+        </p>
+
+        <div class="card-review__author">
+            <div class="card-review__author-img">
+                <img src="./img/testimonials/04.jpg" alt="Photo">
+            </div>
+
+            <div class="card-review__author-title">
+                <h4 class="card-review__author-name">Jake Paul</h4>
+                <p class="card-review__author-role">Travel Enthusiast</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-slide">
+    <div class="card-review">
+        <div class="card-review__rating">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+
+            
+                
+                    <img src="./img/icons/star-off.svg" alt="Star">
+                
+            
+        </div>
+
+        <p class="card-review__text">
+            "The travel website's customer service is top-notch! They were quick to respond to my queries and helped me plan a dream vacation. It was an excellent experience from start to finish."
+        </p>
+
+        <div class="card-review__author">
+            <div class="card-review__author-img">
+                <img src="./img/testimonials/05.jpg" alt="Photo">
+            </div>
+
+            <div class="card-review__author-title">
+                <h4 class="card-review__author-name">Jake Paul</h4>
+                <p class="card-review__author-role">Travel Enthusiast</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-slide">
+    <div class="card-review">
+        <div class="card-review__rating">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+
+            
+        </div>
+
+        <p class="card-review__text">
+            "An outstanding resource for travel enthusiasts! The website's destination reviews and travel advice were spot-on. I now trust their recommendations for all my trips.."
+        </p>
+
+        <div class="card-review__author">
+            <div class="card-review__author-img">
+                <img src="./img/testimonials/06.jpg" alt="Photo">
+            </div>
+
+            <div class="card-review__author-title">
+                <h4 class="card-review__author-name">Hendra Paru Paru</h4>
+                <p class="card-review__author-role">Travel Enthusiast</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-slide">
+    <div class="card-review">
+        <div class="card-review__rating">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+
+            
+        </div>
+
+        <p class="card-review__text">
+            "Amazing experience! The travel website made booking our vacation a breeze. Everything was well-organized, and we had a fantastic time exploring new places. Highly recommend!"
+        </p>
+
+        <div class="card-review__author">
+            <div class="card-review__author-img">
+                <img src="./img/testimonials/04.jpg" alt="Photo">
+            </div>
+
+            <div class="card-review__author-title">
+                <h4 class="card-review__author-name">Jake Paul</h4>
+                <p class="card-review__author-role">Travel Enthusiast</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-slide">
+    <div class="card-review">
+        <div class="card-review__rating">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+
+            
+                
+                    <img src="./img/icons/star-off.svg" alt="Star">
+                
+            
+        </div>
+
+        <p class="card-review__text">
+            "The travel website's customer service is top-notch! They were quick to respond to my queries and helped me plan a dream vacation. It was an excellent experience from start to finish."
+        </p>
+
+        <div class="card-review__author">
+            <div class="card-review__author-img">
+                <img src="./img/testimonials/05.jpg" alt="Photo">
+            </div>
+
+            <div class="card-review__author-title">
+                <h4 class="card-review__author-name">Jake Paul</h4>
+                <p class="card-review__author-role">Travel Enthusiast</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-slide">
+    <div class="card-review">
+        <div class="card-review__rating">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+
+            
+        </div>
+
+        <p class="card-review__text">
+            "An outstanding resource for travel enthusiasts! The website's destination reviews and travel advice were spot-on. I now trust their recommendations for all my trips.."
+        </p>
+
+        <div class="card-review__author">
+            <div class="card-review__author-img">
+                <img src="./img/testimonials/06.jpg" alt="Photo">
+            </div>
+
+            <div class="card-review__author-title">
+                <h4 class="card-review__author-name">Hendra Paru Paru</h4>
+                <p class="card-review__author-role">Travel Enthusiast</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+                    </div>
+			    </div>
+                <!-- // Slider -->
+            </div>
+
+            <div class="testimonials__col">
+                <!-- Slider -->
+                <div class="swiper testimonials__swiper" id="testimonials-col-3">
+                    <div class="swiper-wrapper smooth-transition">
+                        <div class="swiper-slide">
+    <div class="card-review">
+        <div class="card-review__rating">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+
+            
+                
+                    <img src="./img/icons/star-off.svg" alt="Star">
+                
+            
+        </div>
+
+        <p class="card-review__text">
+            "I had a seamless booking process with this travel website. Their website was easy to navigate, and I got fantastic deals on flights and accommodation. Will definitely use them for future trips."
+        </p>
+
+        <div class="card-review__author">
+            <div class="card-review__author-img">
+                <img src="./img/testimonials/07.jpg" alt="Photo">
+            </div>
+
+            <div class="card-review__author-title">
+                <h4 class="card-review__author-name">Akbar Cenglu</h4>
+                <p class="card-review__author-role">Travel Enthusiast</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-slide">
+    <div class="card-review">
+        <div class="card-review__rating">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+
+            
+                
+                    <img src="./img/icons/star-off.svg" alt="Star">
+                
+                    <img src="./img/icons/star-off.svg" alt="Star">
+                
+            
+        </div>
+
+        <p class="card-review__text">
+            "The detailed travel guides provided by this website were invaluable during our journey. We felt confident exploring a new destination, thanks to their helpful tips and insights. erat."
+        </p>
+
+        <div class="card-review__author">
+            <div class="card-review__author-img">
+                <img src="./img/testimonials/08.jpg" alt="Photo">
+            </div>
+
+            <div class="card-review__author-title">
+                <h4 class="card-review__author-name">Jake Paul</h4>
+                <p class="card-review__author-role">Travel Enthusiast</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-slide">
+    <div class="card-review">
+        <div class="card-review__rating">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+
+            
+        </div>
+
+        <p class="card-review__text">
+            "Amazing experience! The travel website made booking our vacation a breeze. Everything was well-organized, and we had a fantastic time exploring new places. Highly recommend!"
+        </p>
+
+        <div class="card-review__author">
+            <div class="card-review__author-img">
+                <img src="./img/testimonials/09.jpg" alt="Photo">
+            </div>
+
+            <div class="card-review__author-title">
+                <h4 class="card-review__author-name">Jake Paul</h4>
+                <p class="card-review__author-role">Travel Enthusiast</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-slide">
+    <div class="card-review">
+        <div class="card-review__rating">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+
+            
+                
+                    <img src="./img/icons/star-off.svg" alt="Star">
+                
+            
+        </div>
+
+        <p class="card-review__text">
+            "I had a seamless booking process with this travel website. Their website was easy to navigate, and I got fantastic deals on flights and accommodation. Will definitely use them for future trips."
+        </p>
+
+        <div class="card-review__author">
+            <div class="card-review__author-img">
+                <img src="./img/testimonials/07.jpg" alt="Photo">
+            </div>
+
+            <div class="card-review__author-title">
+                <h4 class="card-review__author-name">Akbar Cenglu</h4>
+                <p class="card-review__author-role">Travel Enthusiast</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-slide">
+    <div class="card-review">
+        <div class="card-review__rating">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+
+            
+                
+                    <img src="./img/icons/star-off.svg" alt="Star">
+                
+                    <img src="./img/icons/star-off.svg" alt="Star">
+                
+            
+        </div>
+
+        <p class="card-review__text">
+            "The detailed travel guides provided by this website were invaluable during our journey. We felt confident exploring a new destination, thanks to their helpful tips and insights. erat."
+        </p>
+
+        <div class="card-review__author">
+            <div class="card-review__author-img">
+                <img src="./img/testimonials/08.jpg" alt="Photo">
+            </div>
+
+            <div class="card-review__author-title">
+                <h4 class="card-review__author-name">Jake Paul</h4>
+                <p class="card-review__author-role">Travel Enthusiast</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-slide">
+    <div class="card-review">
+        <div class="card-review__rating">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+                <img src="./img/icons/star.svg" alt="Star">
+            
+
+            
+        </div>
+
+        <p class="card-review__text">
+            "Amazing experience! The travel website made booking our vacation a breeze. Everything was well-organized, and we had a fantastic time exploring new places. Highly recommend!"
+        </p>
+
+        <div class="card-review__author">
+            <div class="card-review__author-img">
+                <img src="./img/testimonials/09.jpg" alt="Photo">
+            </div>
+
+            <div class="card-review__author-title">
+                <h4 class="card-review__author-name">Jake Paul</h4>
+                <p class="card-review__author-role">Travel Enthusiast</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+                    </div>
+			    </div>
+                <!-- // Slider -->
+            </div>
+
+
+		</div>
+	</div>
 </section>
-        <section class="subscribe">
+
+			<section class="subscribe">
     <div class="container">
         <div class="subscribe__row">
             <div class="subscribe__dest">
@@ -468,8 +921,8 @@
         </div>
     </div>
 </section>
-    </main>
-    <footer class="footer">
+		</main>
+		<footer class="footer">
 	<div class="container">
 		<div class="footer__row">
 			<div class="footer__copyright">
@@ -504,8 +957,6 @@
 		</div>
 	</div>
 </footer>
-
-    <script src="./js/index.bundle.js"></script>
-</body>
-
+		<script src="./js/index.bundle.js"></script>
+	</body>
 </html>

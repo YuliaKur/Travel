@@ -25,7 +25,7 @@ img {
 	}
 
 	&--decor::after {
-		content: "";
+		content: '';
 
 		position: absolute;
 		left: 0px;
@@ -52,10 +52,9 @@ img {
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 450;
-	line-height: 150%;
-	/* 27px */
+	line-height: 150%; /* 27px */
 
-	p+p {
+	p + p {
 		margin-top: 1em;
 	}
 }

@@ -1,21 +1,38 @@
 <section class="testimonials">
-    <div class="container">
-        <div class="testimonials__grid">
-            <div class="testimonials_col">
-                @@include('testimonials/card-1.html')
-                @@include('testimonials/card-2.html')
-                @@include('testimonials/card-3.html')
+	<div class="container">
+		<div class="testimonials__grid">
+
+            <div class="testimonials__col">
+                <!-- Slider -->
+                <div class="swiper testimonials__swiper" id="testimonials-col-1">
+                    <div class="swiper-wrapper smooth-transition">
+                        @@loop('./templates/card-review.html', './data/testimonials-col-1.json')
+                    </div>
+			    </div>
+                <!-- // Slider -->
             </div>
-            <div class="testimonials_col">
-                @@include('testimonials/card-4.html')
-                @@include('testimonials/card-5.html')
-                @@include('testimonials/card-6.html')
+
+            <div class="testimonials__col">
+                <!-- Slider -->
+                <div class="swiper testimonials__swiper" id="testimonials-col-2">
+                    <div class="swiper-wrapper smooth-transition">
+                        @@loop('./templates/card-review.html', './data/testimonials-col-2.json')
+                    </div>
+			    </div>
+                <!-- // Slider -->
             </div>
-            <div class="testimonials_col">
-                @@include('testimonials/card-7.html')
-                @@include('testimonials/card-8.html')
-                @@include('testimonials/card-9.html')
+
+            <div class="testimonials__col">
+                <!-- Slider -->
+                <div class="swiper testimonials__swiper" id="testimonials-col-3">
+                    <div class="swiper-wrapper smooth-transition">
+                        @@loop('./templates/card-review.html', './data/testimonials-col-3.json')
+                    </div>
+			    </div>
+                <!-- // Slider -->
             </div>
-        </div>
-    </div>
+
+
+		</div>
+	</div>
 </section>
